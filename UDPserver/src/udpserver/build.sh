@@ -7,6 +7,6 @@ then
 fi
 
 find *.java > build.txt
-javac @build.txt
+javac -d .  @build.txt
 rm build.txt
 echo "Done"
