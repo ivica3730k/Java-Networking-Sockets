@@ -12,9 +12,7 @@ package udpserver;
 public class main {
         public static void main(String[] args) {
         System.out.print("Hello world, starting java receiver server\n");
-        UDPserver server = new UDPserver();
-        //UDPserver server = new UDPserver();
-        server.run();
+        UDPserver.run();
         
     }
 }

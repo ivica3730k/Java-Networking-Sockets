@@ -11,7 +11,10 @@ package udpclient;
  */
 public class main {
     public static void main(String[] args) {
-        UDPclient.run();
-     
+        String ip = args[0];
+        UDPclientSender sender = new UDPclientSender();
+        UDPclientReceiver receiver = new UDPclientReceiver();
+        sender.start(ip);
+        receiver.start();
     }
 }
